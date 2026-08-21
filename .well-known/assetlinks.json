@@ -1,0 +1,8 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "io.github.cengizulkekole521_netizen.twa",
+    "sha256_cert_fingerprints": ["1C:D2:CC:B0:D6:98:D4:11:DE:A9:CF:FC:0C:6D:D6:49:15:DF:BB:5D:A9:F1:00:EB:61:DB:39:8D:44:89:1A:A7"]
+  }
+}]
