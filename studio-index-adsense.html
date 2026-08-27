@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3179762418694902"
+     crossorigin="anonymous"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tenacity Studio</title>
+<style>
+  :root{
+    --void:#0a0e16;
+    --gold:#f3c96b;
+    --goldDeep:#8a5a12;
+    --blue:#4f8dfb;
+    --blueDeep:#153a75;
+    --text:#eef0ff;
+    --dim:#9aa3b8;
+  }
+  *{ box-sizing:border-box; margin:0; padding:0; }
+  html,body{
+    background:var(--void);
+    color:var(--text);
+    font-family:'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+    min-height:100vh;
+  }
+  body{
+    display:flex; flex-direction:column; align-items:center; justify-content:center;
+    padding:32px 20px;
+    background:radial-gradient(circle at 50% 20%, #14181f 0%, #0a0e16 65%);
+    text-align:center;
+  }
+  .star{ position:fixed; border-radius:50%; background:#fff; }
+
+  .logo{
+    width:120px; height:120px; margin-bottom:22px;
+    filter:drop-shadow(0 0 30px rgba(79,141,251,.35));
+  }
+  h1{
+    font-size:34px; font-weight:900; letter-spacing:2px;
+    background:linear-gradient(90deg, var(--gold), #fff6da, var(--blue));
+    -webkit-background-clip:text; background-clip:text; color:transparent;
+    margin-bottom:6px;
+  }
+  .tagline{
+    font-size:13px; color:var(--dim); letter-spacing:1.5px; text-transform:uppercase;
+    margin-bottom:44px;
+  }
+
+  .section-label{
+    font-size:11px; letter-spacing:3px; color:var(--dim); text-transform:uppercase;
+    margin-bottom:16px;
+  }
+
+  .game-card{
+    width:100%; max-width:380px;
+    background:rgba(255,255,255,.03);
+    border:1px solid rgba(79,141,251,.2);
+    border-radius:18px;
+    padding:20px;
+    display:flex; align-items:center; gap:16px;
+    text-align:left;
+    text-decoration:none;
+    color:inherit;
+    margin-bottom:14px;
+    transition:border-color .2s;
+  }
+  .game-card:active{ border-color:rgba(243,201,107,.5); }
+  .game-thumb{
+    width:56px; height:56px; border-radius:14px; flex:0 0 auto;
+    background:radial-gradient(circle at 35% 30%, #f59e0b, #a855f7 55%, #3b82f6);
+    box-shadow:0 0 24px rgba(168,85,247,.5);
+  }
+  .game-info h3{ font-size:16px; margin-bottom:3px; }
+  .game-info p{ font-size:12px; color:var(--dim); line-height:1.4; }
+  .arrow{ margin-left:auto; color:var(--dim); font-size:20px; }
+
+  footer{
+    margin-top:56px;
+    font-size:11px; color:var(--dim); letter-spacing:1px;
+  }
+  footer a{ color:var(--blue); text-decoration:none; }
+</style>
+</head>
+<body>
+
+  <img class="logo" src="studio-icon.png" alt="Tenacity Studio">
+  <h1>TENACITY STUDIO</h1>
+  <div class="tagline">Sürekli ilerleme, sınır tanımayan hikayeler</div>
+
+  <div class="section-label">Oyunlarımız</div>
+
+  <a class="game-card" href="https://cengizulkekole521-netizen.github.io/ETK--Kelebe-in-Yank-s-/">
+    <div class="game-thumb"></div>
+    <div class="game-info">
+      <h3>Etki: Kelebeğin Yankısı</h3>
+      <p>Üç paralel evrenin kesişim noktasında hayatta kalma oyunu.</p>
+    </div>
+    <div class="arrow">→</div>
+  </a>
+
+  <footer>
+    © 2026 Tenacity Studio — <a href="https://cengizulkekole521-netizen.github.io/ETK--Kelebe-in-Yank-s-/">Oyunu Oyna</a>
+  </footer>
+
+<script>
+  for(let i=0;i<40;i++){
+    const s = document.createElement('div');
+    s.className = 'star';
+    const size = Math.random()*1.8+0.6;
+    s.style.width = size+'px';
+    s.style.height = size+'px';
+    s.style.left = Math.random()*window.innerWidth+'px';
+    s.style.top = Math.random()*window.innerHeight+'px';
+    s.style.opacity = (Math.random()*0.6+0.2).toString();
+    document.body.appendChild(s);
+  }
+</script>
+</body>
+</html>
